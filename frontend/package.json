@@ -1,13 +1,33 @@
 {
-  "name": "boilerplate",
-  "version": "0.1.0",
+  "name": "boilerplate-frontend",
+  "version": "1.0.0",
+  "description": "React App Boilerplate",
   "private": true,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marterix/boilerplate.git"
+  },
+  "keywords": [
+    "Node",
+    "React"
+  ],
+  "author": "Marterix",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "start-webpack": "webpack serve --open 'Chrome'",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
+    "file-loader": "^6.2.0",
     "js-cookie": "^2.2.1",
     "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",
@@ -20,13 +40,8 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "save-dev": "0.0.1-security",
-    "web-vitals": "^0.2.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "web-vitals": "^0.2.4",
+    "webpack": "^5.11.1"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +64,13 @@
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/eslint-parser": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^5.0.1",
     "eslint": "^7.17.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",
@@ -56,9 +78,16 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.1",
+    "html-webpack-plugin": "^4.5.1",
     "husky": "^4.3.7",
+    "jest": "^26.6.3",
     "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1",
+    "webpack-node-externals": "^2.5.2"
   },
   "husky": {
     "hooks": {
